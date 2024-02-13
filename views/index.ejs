@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia de Software</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Engenharia de Software</h1>
+    <hr>
+    <h3>Total de aulas no semestre: 60</h3>
+    <form action="/updateValue" onsubmit="enviarFormulario()" method="post">
+        <button type="submit" class="btn btn-dark">Mostrar resultado</button>
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <% pessoa.slice(2,3).forEach(function(item) { %>
+            <tr>
+                <th>
+                    <%= item[0] %>
+                    
+                </th>
+                <th>
+                    <%= item[1] %>
+                </th>
+                <th>
+                    <%= item[2] %>
+                </th>
+                <th>
+                    <%= item[3] %>
+                </th>
+                <th>
+                    <%= item[4] %>
+                </th>
+                <th>
+                    <%= item[5] %>
+                </th>
+                <th>
+                    <%= item[6] %>
+                </th>
+                <th>
+                    <%= item[7] %>
+                </th>
+            </tr>
+            <% }) %>
+        </thead>
+        <tbody>
+            <% pessoa.slice(3).forEach(function(item) { %>
+            <tr>
+                <th>
+                    <%= item[0] %>
+                    
+                </th>
+                <th>
+                    <%= item[1] %>
+                </th>
+                <th>
+                    <%= item[2] %>
+                </th>
+                <th>
+                    <%= item[3] %>
+                </th>
+                <th>
+                    <%= item[4] %>
+                </th>
+                <th>
+                    <%= item[5] %>
+                </th>
+                <th>
+                    <%= item[6] %>
+                </th>
+                <th>
+                    <%= item[7] %>
+                </th>
+            </tr>
+           
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js"
+</html>
