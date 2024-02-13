@@ -45,7 +45,7 @@ app.get("/", async (req, res)=> {
     });
         const dataArray = getRows.data.values.slice(3);    
 
-        res.render("index.ejs", {pessoa: getRows.data.values});
+        res.render("index.ejs", {person: getRows.data.values});
     });
 
 app.post("/updateValue", async(req, res)=> {
